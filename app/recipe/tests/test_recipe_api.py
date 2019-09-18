@@ -250,7 +250,7 @@ class RecipeImageUploadTests(TestCase):
         self.assertIn(serializer2.data, res.data)
         self.assertNotIn(serializer3.data, res.data)
 
-    def test_filter_recioe_by_ingredients(self):
+    def test_filter_recipe_by_ingredients(self):
         """Test returning recipes with specific ingredients"""
         recipe1 = sample_recipe(user=self.user, title="Posh beans on toast")
         recipe2 = sample_recipe(user=self.user, title="Chicken cacciatore")
